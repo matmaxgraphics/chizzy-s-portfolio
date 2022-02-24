@@ -1,0 +1,235 @@
+@import "mixins";
+@import "variables";
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*General styling*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+  }
+
+h1 {
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+  
+h2 {
+    font-size: clamp(1.72rem, 3vw, 2.5rem);
+}
+  
+h4 {
+    font-size: clamp(20px, 2.5vw, 24px);
+}
+h1, h2, h3{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+button{
+    color: #fff;
+    border: unset;
+    padding: 15px 0px;
+    background-color: $buttonColor;
+    font-size: 16px;
+    border-radius: 8px;
+    font-family: inherit;
+    max-width: 150px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=======NAVIGATION BAR STYLING========*/
+nav{
+	background: $secondaryColor;
+	height: 60px;
+	width: 100%;
+    ul{
+        float: right;
+        margin-right: 20px;
+    }
+    li{
+        display: inline-block;
+        line-height: 60px;
+        margin: 0 5px;
+        a{
+            color: $fontColor;
+            padding: 10px;
+        }
+    }
+}
+label.logo{
+	padding: 0 40px;
+}
+.checkbtn{
+	float: right;
+	line-height: 60px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+    img{
+        width: 40px;
+        height: auto;
+        margin-top: 10px;
+    }
+}
+#check{
+	display: none;
+}
+label.logo{
+    img{
+        width: 45px;
+        height: auto;
+        margin-top: 6px;
+    }
+	
+}
+
+@media only screen and (max-width: 952px){
+	label.logo{
+		img{
+            width: 35px;
+            margin-top: 12px;
+        }
+	}
+	nav{
+        li{
+            a{
+                font-size: 16px;      
+            }
+        }
+    } 
+}
+
+@media only screen and (max-width: 858px){
+    .checkbtn{
+		display: block;
+	}
+    #check:checked ~ ul{
+		left: 0;
+	}
+    nav{
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: $secondaryColor;
+            top: 60px;
+            left: -100%;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        li{
+            display: block;
+            margin: 50px 0;
+            line-height: 30px;
+        }
+    }
+}
+/*=======END OF NAVIGATION BAR STYLING========*/
+
+
+/*=======HERO SECTION STYLING========*/
+.hero-section{
+    @include row-column;
+    
+    .description-container{
+        @include column-description;
+        margin-right: 24px;
+        width: 65%;
+        h1{
+            margin-bottom: 24px;
+        }
+        a.underline{
+            text-decoration: underline;
+        }
+        button{
+            margin-top: 24px;
+        }
+
+    }
+    .image-container{
+        @include column-img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            max-width: 80%;
+            height: auto;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 760px){
+    .hero-section{
+        @include responsive;
+
+        .description-container, .image-container{
+            width: 100%;
+            padding-right: unset;
+        }
+        .description-container{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+/*=======END OF HERO SECTION STYLING========*/
+
+.brand-section{
+    margin: 96px 0;
+    background-color: $secondaryColor;
+    padding: 24px;
+    width: 100%;
+    h2{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+}
+
+.brand-list-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+    flex-flow: row wrap;
+    gap: 12px;
+    .brand-list{
+        background-color: #fff;
+        padding: 24px;
+        width: 100px;
+        height: 80px;
+    }
+    img.brand-img{
+        width: 80px;
+        height: auto;
+    }
+}
