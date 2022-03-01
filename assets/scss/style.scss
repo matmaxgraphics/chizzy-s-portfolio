@@ -48,7 +48,12 @@ button{
     font-size: 16px;
     border-radius: 8px;
     font-family: inherit;
-    max-width: 150px;
+    min-width: 150px;
+    transition: 0.3s;
+    &:hover{
+        background-color: rgb(78, 201, 238);
+        transition: 0.3s;
+    }
 }
 .btn{
     display: flex;
@@ -171,6 +176,7 @@ label.logo{
         }
         button{
             margin-top: 24px;
+            max-width: 150px !important;
         }
 
     }
@@ -275,6 +281,70 @@ label.logo{
         }
         h4{
             margin-bottom: 12px;
+        }
+    }
+}
+/*========END OF SERVICE SECTION STYLING======*/
+
+
+/*========PROJECT SECTION STYLING======*/
+.project-section{
+    margin: 96px 48px;
+    h2{
+        text-align: center;
+        margin-bottom: 48px;
+    }
+}
+
+.project-wrapper{
+    display: flex;
+	flex-flow: row wrap;
+	align-items: baseline;
+	justify-content: center;
+    .project-list{
+        display: inline-block; /* Make the width of box same as image */
+        margin: 10px;
+        position: relative;
+        img{
+            background: #34495e;
+            max-width: 500px;
+            max-height: 600px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .absolute-btn{
+            position: absolute;
+            z-index: 10;
+            left: 24px;      
+        }
+        .easy-flip{
+            bottom: 20%;
+        }
+        .ventri{
+            top: 24%;
+            left: 48px;
+        }
+        .green-poult{
+            bottom: 30%;
+        }
+    }
+    
+}
+
+@media (max-width: 600px){
+    .project-wrapper{
+        align-items: flex-start;
+        .project-list{
+            .absolute-btn{
+                left: 12px;
+            }
+            .ventri{
+                left: 40px;
+            }
+        }
+        img{
+            width: 100%;
+            height: auto;
         }
     }
 }

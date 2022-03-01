@@ -51,7 +51,14 @@ button {
   font-size: 16px;
   border-radius: 8px;
   font-family: inherit;
-  max-width: 150px;
+  min-width: 150px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #4ec9ee;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .btn {
@@ -208,6 +215,7 @@ label.logo img {
 }
 .hero-section .description-container button {
   margin-top: 24px;
+  max-width: 150px !important;
 }
 .hero-section .image-container {
   width: 50%;
@@ -333,4 +341,78 @@ label.logo img {
 }
 .service-section .service-list h4 {
   margin-bottom: 12px;
+}
+
+/*========END OF SERVICE SECTION STYLING======*/
+/*========PROJECT SECTION STYLING======*/
+.project-section {
+  margin: 96px 48px;
+}
+.project-section h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.project-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project-wrapper .project-list {
+  display: inline-block;
+  /* Make the width of box same as image */
+  margin: 10px;
+  position: relative;
+}
+.project-wrapper .project-list img {
+  background: #34495e;
+  max-width: 500px;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.project-wrapper .project-list .absolute-btn {
+  position: absolute;
+  z-index: 10;
+  left: 24px;
+}
+.project-wrapper .project-list .easy-flip {
+  bottom: 20%;
+}
+.project-wrapper .project-list .ventri {
+  top: 24%;
+  left: 48px;
+}
+.project-wrapper .project-list .green-poult {
+  bottom: 30%;
+}
+
+@media (max-width: 600px) {
+  .project-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .project-wrapper .project-list .absolute-btn {
+    left: 12px;
+  }
+  .project-wrapper .project-list .ventri {
+    left: 40px;
+  }
+  .project-wrapper img {
+    width: 100%;
+    height: auto;
+  }
 }
