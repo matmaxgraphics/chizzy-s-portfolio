@@ -283,3 +283,54 @@ label.logo img {
   width: 80px;
   height: auto;
 }
+
+/*========SERVICE SECTION STYLING======*/
+.service-section {
+  margin-bottom: 48px;
+}
+.service-section h2 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.service-section .service-wrapper {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 10px;
+}
+.service-section .service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fafafa;
+  padding: 12px;
+}
+.service-section .service-list span {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+}
+.service-section .service-list .accentColor-1 {
+  background-color: #e7a4a8;
+}
+.service-section .service-list .accentColor-2 {
+  background-color: #a4d7e7;
+}
+.service-section .service-list .accentColor-3 {
+  background-color: #e2a4e7;
+}
+.service-section .service-list img {
+  width: 24px;
+  height: auto;
+}
+.service-section .service-list h4 {
+  margin-bottom: 12px;
+}

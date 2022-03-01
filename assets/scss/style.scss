@@ -233,3 +233,48 @@ label.logo{
         height: auto;
     }
 }
+
+/*========SERVICE SECTION STYLING======*/
+.service-section{
+    margin-bottom: 48px;
+    h2{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .service-wrapper{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        padding: 10px;
+    }
+    .service-list{
+        display: flex;
+        flex-direction: column;
+        background-color: $secondaryColor;
+        padding: 12px;
+        span{
+            width: 48px;
+            height: 48px;
+            padding: 12px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+        }
+        .accentColor-1{
+            background-color: $accentColor-1;
+        }
+        .accentColor-2{
+            background-color: $accentColor-2;
+        }
+        .accentColor-3{
+            background-color: $accentColor-3;
+        }
+        img{
+            width: 24px;
+            height: auto;
+        }
+        h4{
+            margin-bottom: 12px;
+        }
+    }
+}
