@@ -41,6 +41,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
+  color: #333333;
 }
 
 button {
@@ -86,6 +87,10 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.link-color {
+  color: #263250 !important;
 }
 
 /*=======NAVIGATION BAR STYLING========*/
@@ -415,4 +420,59 @@ label.logo img {
     width: 100%;
     height: auto;
   }
+}
+.footer-wrapper {
+  text-align: center;
+}
+.footer-wrapper .bold {
+  font-weight: bold;
+  color: #263250;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-wrapper .bold:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-wrapper .social-links {
+  margin: 12px 0 48px;
+}
+.footer-wrapper .svg-icon {
+  background-color: #263250;
+  padding: 6px;
+  margin-right: 24px;
+  width: 32px;
+  height: auto;
+}
+.footer-wrapper .svg-icon img {
+  width: 24px;
+  height: auto;
+  position: relative;
+  top: 4px;
+}
+.footer-wrapper hr {
+  margin-top: 24px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.buttom-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+.buttom-footer img {
+  width: 32px;
+  height: auto;
+  position: relative;
+  left: -20%;
 }

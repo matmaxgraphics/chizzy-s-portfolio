@@ -39,6 +39,7 @@ p{
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
+    color: $fontColor;
 }
 button{
     color: #fff;
@@ -69,7 +70,9 @@ button{
     justify-content: center;
     align-items: center;
 }
-
+.link-color{
+    color: #263250 !important;
+}
 /*=======NAVIGATION BAR STYLING========*/
 nav{
 	background: $secondaryColor;
@@ -346,5 +349,53 @@ label.logo{
             width: 100%;
             height: auto;
         }
+    }
+}
+
+
+.footer-wrapper{
+    text-align: center;
+    .bold{
+        font-weight: bold;
+        color: #263250;
+        transition: 0.3s;
+        &:hover{
+            text-decoration: underline;
+            transition: 0.3s;
+        }
+    }
+    .social-links{
+        margin: 12px 0 48px;
+    }
+    .svg-icon{
+        background-color: $iconBackground;
+        padding: 6px;
+        margin-right: 24px;
+        width: 32px;
+        height: auto;
+        img{
+            width: 24px;
+            height: auto;
+            position: relative;
+            top: 4px;
+        }
+    }
+    hr{
+        margin-top: 24px;
+        max-width: 900px;
+        margin: auto;
+    }
+}
+.buttom-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    img{
+        width: 32px;
+        height: auto;
+        position: relative;
+        left: -20%;
     }
 }
