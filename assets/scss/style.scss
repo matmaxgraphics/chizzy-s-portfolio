@@ -208,6 +208,11 @@ label.logo{
             width: 100%;
             margin-bottom: 60px;
         }
+        .image-container{
+            img{
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -293,6 +298,7 @@ label.logo{
 /*========PROJECT SECTION STYLING======*/
 .project-section{
     margin: 96px 48px;
+    padding: 12px;
     h2{
         text-align: center;
         margin-bottom: 48px;
@@ -346,8 +352,16 @@ label.logo{
             }
         }
         img{
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 350px;
+        }
+    }
+}
+@media (max-width: 350px){
+    .project-wrapper{
+        img{
+            width: auto;
+            height: 300px;
         }
     }
 }
@@ -369,7 +383,7 @@ label.logo{
     }
     .svg-icon{
         background-color: $iconBackground;
-        padding: 6px;
+        padding: 8px;
         margin-right: 24px;
         width: 32px;
         height: auto;

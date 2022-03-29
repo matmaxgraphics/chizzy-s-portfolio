@@ -256,6 +256,9 @@ label.logo img {
     width: 100%;
     margin-bottom: 60px;
   }
+  .hero-section .image-container img {
+    width: 100%;
+  }
 }
 /*=======END OF HERO SECTION STYLING========*/
 .brand-section {
@@ -352,6 +355,7 @@ label.logo img {
 /*========PROJECT SECTION STYLING======*/
 .project-section {
   margin: 96px 48px;
+  padding: 12px;
 }
 .project-section h2 {
   text-align: center;
@@ -417,8 +421,14 @@ label.logo img {
     left: 40px;
   }
   .project-wrapper img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .project-wrapper img {
+    width: auto;
+    height: 300px;
   }
 }
 .footer-wrapper {
@@ -440,7 +450,7 @@ label.logo img {
 }
 .footer-wrapper .svg-icon {
   background-color: #263250;
-  padding: 6px;
+  padding: 8px;
   margin-right: 24px;
   width: 32px;
   height: auto;
