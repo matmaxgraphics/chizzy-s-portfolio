@@ -73,6 +73,34 @@ button{
 .link-color{
     color: #263250 !important;
 }
+.margin-top{
+    margin-top: 24px;
+}
+header.heading{
+    position: relative;
+    .heading-underline{
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        bottom: -8px;
+        background-color: #000;
+    }
+    .brand{
+        left: 29.5%;
+    }
+    .service{
+        left: 41%;
+    }
+    .experience{
+        left: 0%;
+    }
+}
+
+.waving{
+    width: 32px;
+    height: auto;
+}
+
 /*=======NAVIGATION BAR STYLING========*/
 nav{
 	background: $secondaryColor;
@@ -321,6 +349,18 @@ label.logo{
             object-fit: cover;
             object-position: center;
         }
+        /*.coming-soon{
+            position: relative;
+            filter: brightness(0.3);
+        }
+        .overlay{
+            position: absolute;
+            inset: 50% 40%;
+            width: 100%;
+            color: #fff;
+            font-size: 20px;
+
+        }*/
         .absolute-btn{
             position: absolute;
             z-index: 10;
@@ -351,6 +391,7 @@ label.logo{
                 left: 40px;
             }
         }
+
         img{
             width: auto;
             height: 350px;
@@ -366,7 +407,10 @@ label.logo{
     }
 }
 
-
+footer{
+    background-color: $secondaryColor;
+    padding: 40px 6px;
+}
 .footer-wrapper{
     text-align: center;
     .bold{
@@ -395,7 +439,7 @@ label.logo{
         }
     }
     hr{
-        margin-top: 24px;
+        margin-top: 48px;
         max-width: 900px;
         margin: auto;
     }
@@ -411,5 +455,112 @@ label.logo{
         height: auto;
         position: relative;
         left: -20%;
+    }
+}
+/*=========END OF FOOTER STYLING======*/
+
+
+
+
+/*======ABOUT PAGE STYLING========*/
+.about-page-wrapper{
+    padding: 36px;
+    .service-section{
+        margin-top: 48px;
+    }
+}
+
+.bio-section{
+    header{
+        h4, h1{
+            margin-bottom: 24px;
+        }
+    }
+}
+.paragraph-group{
+    p{
+        margin-bottom: 12px;
+        a{
+            color: #263250 !important;
+            text-decoration: underline;
+        }
+    }
+}
+
+.image-showcase{
+    margin: 24px 0;
+    .img-group{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        gap: 24px;
+        img{
+            width: 30%;
+            height: auto;
+            object-fit: contain;
+            object-position: center;
+
+        }
+    }
+}
+
+@media (max-width: 780px){
+    .image-showcase{
+        .img-group{
+            img{
+                width: 45%;
+                height: auto;
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .about-page-wrapper{
+        padding: 24px;
+    }
+
+    .image-showcase{
+        .img-group{
+            align-items: center;
+            justify-content: space-around;
+            img{
+                width: 80%;
+                height: auto;
+    
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    .image-showcase{
+        .img-group{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+/*--------WORK EXPERIENCE SECTION-----*/
+.experience-section{
+    max-width: 600px;
+    margin-bottom: 114px;
+    h2{
+        margin-bottom: 48px;
+    }
+}
+.experience-list{
+    margin-bottom: 48px;
+    header{
+        margin-bottom: 12px;
+    }
+    ul{
+        margin-left: 24px;
+    }
+    li{
+        margin-bottom: 12px;
     }
 }

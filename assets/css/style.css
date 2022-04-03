@@ -93,6 +93,35 @@ button:hover {
   color: #263250 !important;
 }
 
+.margin-top {
+  margin-top: 24px;
+}
+
+header.heading {
+  position: relative;
+}
+header.heading .heading-underline {
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  bottom: -8px;
+  background-color: #000;
+}
+header.heading .brand {
+  left: 29.5%;
+}
+header.heading .service {
+  left: 41%;
+}
+header.heading .experience {
+  left: 0%;
+}
+
+.waving {
+  width: 32px;
+  height: auto;
+}
+
 /*=======NAVIGATION BAR STYLING========*/
 nav {
   background: #fafafa;
@@ -382,6 +411,18 @@ label.logo img {
   /* Make the width of box same as image */
   margin: 10px;
   position: relative;
+  /*.coming-soon{
+      position: relative;
+      filter: brightness(0.3);
+  }
+  .overlay{
+      position: absolute;
+      inset: 50% 40%;
+      width: 100%;
+      color: #fff;
+      font-size: 20px;
+
+  }*/
 }
 .project-wrapper .project-list img {
   background: #34495e;
@@ -431,6 +472,11 @@ label.logo img {
     height: 300px;
   }
 }
+footer {
+  background-color: #fafafa;
+  padding: 40px 6px;
+}
+
 .footer-wrapper {
   text-align: center;
 }
@@ -462,7 +508,7 @@ label.logo img {
   top: 4px;
 }
 .footer-wrapper hr {
-  margin-top: 24px;
+  margin-top: 48px;
   max-width: 900px;
   margin: auto;
 }
@@ -485,4 +531,101 @@ label.logo img {
   height: auto;
   position: relative;
   left: -20%;
+}
+
+/*=========END OF FOOTER STYLING======*/
+/*======ABOUT PAGE STYLING========*/
+.about-page-wrapper {
+  padding: 36px;
+}
+.about-page-wrapper .service-section {
+  margin-top: 48px;
+}
+
+.bio-section header h4, .bio-section header h1 {
+  margin-bottom: 24px;
+}
+
+.paragraph-group p {
+  margin-bottom: 12px;
+}
+.paragraph-group p a {
+  color: #263250 !important;
+  text-decoration: underline;
+}
+
+.image-showcase {
+  margin: 24px 0;
+}
+.image-showcase .img-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 24px;
+}
+.image-showcase .img-group img {
+  width: 30%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+@media (max-width: 780px) {
+  .image-showcase .img-group img {
+    width: 45%;
+    height: auto;
+  }
+}
+@media (max-width: 550px) {
+  .about-page-wrapper {
+    padding: 24px;
+  }
+
+  .image-showcase .img-group {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .image-showcase .img-group img {
+    width: 80%;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .image-showcase .img-group img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*--------WORK EXPERIENCE SECTION-----*/
+.experience-section {
+  max-width: 600px;
+  margin-bottom: 114px;
+}
+.experience-section h2 {
+  margin-bottom: 48px;
+}
+
+.experience-list {
+  margin-bottom: 48px;
+}
+.experience-list header {
+  margin-bottom: 12px;
+}
+.experience-list ul {
+  margin-left: 24px;
+}
+.experience-list li {
+  margin-bottom: 12px;
 }

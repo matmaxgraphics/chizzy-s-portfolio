@@ -28,19 +28,19 @@
             <label for="check" class="checkbtn">
                 <img src="assets/images/menu-bar.png" alt="hamburger icon" class="toggle-img">
             </label>
-        <label class="logo"><img src="assets/images/logo.png" alt="logo of Chizzy"></label>
+        <label class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo of Chizzy"></a></label>
         <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">My Services</a></li>
-          <li><a href="#">My Projects</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="index.html#service-section">My Services</a></li>
+          <li><a href="index.html#project-section">My Projects</a></li>
+          <li><a href="index.html#footer-wrapper">Contact Me</a></li>
         </ul>
     </nav>
 
     <section class="hero-section">
         <div class="description-container">
-            <h1>Hello There, I'm CHIZZY!</h1>
+            <h1>Hello There <img src="assets/images/waving-hand.png" alt="waving hand icon" class="waving">, I'm CHIZZY!</h1>
             <p>A professional and talented UI/UX designer, skilled in 
                 UX research and technical writing. I help businesses 
                 bring about positive change, using an impactful brand 
@@ -57,7 +57,10 @@
 
     <div class="page-wrapper">
         <section class="brand-section">
-            <h2>Brands I have Worked With</h2>
+            <header class="heading">
+                <h2>Brands I have Worked With</h2>
+                <div class="heading-underline brand"></div>
+            </header>
             <div class="brand-list-container">
                 <div class="brand-list flex">
                     <img src="assets/images/hng.png" class="brand-img" alt="logo image of DSN">
@@ -80,8 +83,11 @@
             </div>
         </section>
 
-        <section class="service-section">
-            <h2>My Services</h2>
+        <section class="service-section" id="service-section">
+            <header class="heading">
+                <h2>My Services</h2>
+                <div class="heading-underline service"></div>
+            </header>
             <div class="service-wrapper">
                 <div class="service-list">
                     <span class="accentColor-1">
@@ -107,8 +113,11 @@
             </div>
         </section>
 
-        <section class="project-section">
-            <h2>My Projects</h2>
+        <section class="project-section" id="project-section">
+            <header class="heading">
+                <h2>My Projects</h2>
+                <div class="heading-underline service"></div>
+            </header>
             <div class="project-wrapper">
                 <div class="project-list">
                     <img src="assets/images/easyFlip-img.png" alt="poster image of easy flip project" class="poster-img">
@@ -126,15 +135,19 @@
                 </div>
 
                 <div class="project-list">
-                    <img src="assets/images/coming-soon.png" alt="poster image of house it app" class="poster-img">
+                    <img src="assets/images/coming-soon.png" alt="poster image of house it app" class="poster-img coming-soon">
+                    <div class="overlay">Coming Soon...</div>
                 </div>
             </div>
         </section>
 
         <footer>
-            <div class="footer-wrapper">
-                <h2>Get In Touch</h2>
-                <p>Want us to work together or make enquiry? <a href="mailto:gbadamosimateen@gmail.com" class="bold">Email Me</a></p>
+            <div class="footer-wrapper" id="footer-wrapper">
+                <header class="heading">
+                    <h2>Get In Touch</h2>
+                    <div class="heading-underline service"></div>
+                </header>
+                <p class="margin-top">Want us to work together or make enquiry? <a href="mailto:gbadamosimateen@gmail.com" class="bold">Email Me</a></p>
                 <div class="social-links">
                     <a href="#" class="svg-icon"><img src="assets/icons/mail.svg" alt="icon for mailbox"></a>
                     <a href="#" class="svg-icon"><img src="assets/icons/dribbble.svg" alt="icon for dribble profile"></a>
