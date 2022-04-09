@@ -96,6 +96,22 @@ header.heading{
     }
 }
 
+@media (max-width: 500px){
+    header.heading{
+        .heading-underline{
+        }
+        .brand{
+            left: 8%;
+        }
+        .service{
+            left: 35%;
+        }
+        .experience{
+            left: 0%;
+        }
+    }
+}
+
 .waving{
     width: 32px;
     height: auto;
@@ -155,6 +171,8 @@ label.logo{
         }
 	}
 	nav{
+        position: fixed;
+        top: 0;
         li{
             a{
                 font-size: 16px;      
@@ -221,6 +239,15 @@ label.logo{
             height: auto;
             margin: auto;
         }
+    }
+}
+
+@media (max-width: 952px){
+    .hero-section{
+        margin-top: 90px;
+    }
+    .bio-section{
+        margin-top: 72px;
     }
 }
 
@@ -349,18 +376,18 @@ label.logo{
             object-fit: cover;
             object-position: center;
         }
-        /*.coming-soon{
+        .coming-soon{
             position: relative;
             filter: brightness(0.3);
         }
         .overlay{
             position: absolute;
-            inset: 50% 40%;
-            width: 100%;
+            inset: 50% 35%;
+            width: 50%;
             color: #fff;
             font-size: 20px;
 
-        }*/
+        }
         .absolute-btn{
             position: absolute;
             z-index: 10;
@@ -427,10 +454,15 @@ footer{
     }
     .svg-icon{
         background-color: $iconBackground;
-        padding: 8px;
+        padding: 10px;
         margin-right: 24px;
         width: 32px;
         height: auto;
+        transition: 0.3s all;
+        &:hover{
+            transition: 0.3s all;
+            padding: 12px;
+        }
         img{
             width: 24px;
             height: auto;
@@ -455,6 +487,26 @@ footer{
         height: auto;
         position: relative;
         left: -20%;
+    }
+}
+
+@media (max-width: 500px){
+    .buttom-footer{
+        img{
+            left: -10%;
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .buttom-footer{
+        flex-direction: column;
+        img{
+            left: 0%;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 12px;
+        }
     }
 }
 /*=========END OF FOOTER STYLING======*/
@@ -557,10 +609,16 @@ footer{
     header{
         margin-bottom: 12px;
     }
-    ul{
-        margin-left: 24px;
-    }
+
     li{
         margin-bottom: 12px;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        img{
+            width: 10px;
+            height: auto;
+            margin: 6px 12px 0 0;
+        }
     }
 }
