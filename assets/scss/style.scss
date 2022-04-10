@@ -30,6 +30,7 @@ h4 {
 }
 h1, h2, h3{
     font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(51, 51, 51);
 }
 a{
     text-decoration: none;
@@ -64,7 +65,10 @@ button{
     text-decoration: none !important;
     color: #fff;
 }
-
+li{
+    list-style: none;
+    color: $fontColor;
+}
 .flex{
     display: flex;
     justify-content: center;
@@ -120,6 +124,7 @@ nav{
 	background: $secondaryColor;
 	height: 60px;
 	width: 100%;
+    z-index: 999999;
     ul{
         float: right;
         margin-right: 20px;
@@ -133,6 +138,9 @@ nav{
             padding: 10px;
         }
     }
+}
+nav.bg-exception{
+    background-color: $primaryColor;
 }
 label.logo{
 	padding: 0 40px;
@@ -196,6 +204,7 @@ label.logo{
             left: -100%;
             text-align: center;
             transition: all 0.5s;
+            z-index: 99999;
         }
         li{
             display: block;
@@ -454,12 +463,11 @@ footer{
         background-color: $iconBackground;
         padding: 10px;
         margin-right: 24px;
-        width: 32px;
-        height: auto;
         transition: 0.3s all;
         &:hover{
             transition: 0.3s all;
-            padding: 12px;
+            padding: 15px;
+            border-radius: 5px;
         }
         img{
             width: 24px;
@@ -617,6 +625,302 @@ footer{
             width: 10px;
             height: auto;
             margin: 6px 12px 0 0;
+        }
+    }
+}
+/*--------END OF WORK EXPERIENCE SECTION-----*/
+/*===========END OF ABOUT PAGE STYLING============*/
+
+
+/*=========CASE STUDY STYLING===========*/
+@media only screen and (max-width: 858px){
+    .banner-section{
+        margin-top: 60px;
+    }
+}
+.case-study{
+    h1, h2, h3{
+        color: rgba(38, 50, 80, 1);
+    }
+}
+.banner-section{
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.project-info{
+    margin-top: 48px;
+}
+.about-easy{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    padding: 0 24px;
+    h2{
+        margin-bottom: 12px;
+    }
+}
+
+
+/*---------PROJECT OBJECTIVE STYLING--------*/
+.project-objective{
+    display: flex;
+    padding: 10px 24px;
+    width: 100%;
+    margin-top: 114px;
+    justify-content: center;
+    background-color: rgba(250, 220, 224, 1);
+    .image-container{
+        width: 50%;
+        img{
+            width: 80%;
+            object-fit: cover;
+            object-position: center;
+            position: relative;
+            top: -20%;
+        }
+    }
+    .description-container{
+        width: 50%;
+        margin-top: 48px;
+        h2{
+            margin-bottom: 12px;
+        }
+        p{
+            margin-bottom: 12px;
+            max-width: 400px;
+        }
+        li{
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            img{
+                width: 10px;
+                height: auto;
+                margin: 6px 12px 0 0;
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 800px){
+    .project-objective{
+        flex-direction: column;
+        margin-top: 96px;
+        .image-container, .description-container{
+            width: 100%;
+        }
+        .image-container{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+/*---------END OF PROJECT OBJECTIVE STYLING-------*/
+
+/*--------DESIGN PROCESS STYLING--------*/
+.design-process{
+    background-color: rgba(250, 211, 216, 1);
+    padding: 24px;
+    margin-bottom: 60px;
+    h2{
+        position: relative;
+        top: 12px;
+    }
+    img{
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+}
+/*--------DESIGN PROCESS STYLING--------*/
+
+/*--------Competitive Analysis STYLING--------*/
+.competitive-analysis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 0 24px;
+    h2{
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .image-group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 100px;
+            height: auto;
+        }
+    }
+    .caption{
+        text-align: center;
+        font-style: italic;
+        margin: 12px 0 24px;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+}
+/*--------END OF Competitive Analysis STYLING--------*/
+
+/*--------User Research STYLING--------*/
+.user-research{
+    background-color: rgba(250, 220, 224, 1);
+    padding: 24px;
+    h2{
+        margin: 24px 0;
+    }
+    p{
+        margin-bottom: 12px;
+        max-width: 950px;
+    }
+    li{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        max-width: 500px;
+        img{
+            width: 10px;
+            height: auto;
+            margin: 6px 12px 0 0;
+        }
+    }
+}
+/*--------End of User Research STYLING--------*/
+
+
+/*--------Empathy Map STYLING--------*/
+.empathy-map{
+    margin-top: 60px;
+    text-align: center;
+    padding: 24px 0;
+    h2{
+        margin-bottom: 24px;
+    }
+    img{
+        width: 90%;
+        height: auto;
+    }
+}
+/*--------End of Empathy Map STYLING--------*/
+
+
+/*--------User Persona STYLING--------*/
+.user-persona{
+    background-color: rgba(250, 220, 224, 1);
+    padding: 24px;
+    h2{
+        margin: 12px 0;
+    }
+    p{
+        margin-bottom: 24px;
+    }
+
+    img{
+        width: 65%;
+        height: auto;
+        margin-bottom: 24px;
+    }
+}
+
+@media(max-width: 900px){
+    .user-persona{
+        img{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 500px){
+    .user-persona{
+        img{
+            width: 100%;
+        }
+    }
+}
+/*--------End of User Persona STYLING--------*/
+
+
+/*--------The Solution STYLING--------*/
+.solution-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 24px;
+    margin-top: 60px;
+    background-color: rgba(250, 211, 216, 1);
+    .description-container{
+        width: 50%;
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+    li{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        max-width: 500px;
+        img{
+            width: 10px;
+            height: auto;
+            margin: 6px 12px 0 0;
+        }
+    }
+    
+    .image-container{
+        width: 50%;
+        img{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .solution-section{
+        flex-direction: column;
+        margin-top: 96px;
+        .image-container, .description-container{
+            width: 100%;
+        }
+        .description-container{
+            margin-top: 48px;
+        }
+        .image-container{
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+/*--------End of The Solution STYLING--------*/
+
+.user-flow{
+    text-align: center;
+    margin-top: 72px;
+    h2{
+        margin-bottom: 24px;
+    }
+    img{
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px){
+    .user-flow{
+        img{
+            width: 100%;
         }
     }
 }

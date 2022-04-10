@@ -30,6 +30,7 @@ h4 {
 
 h1, h2, h3 {
   font-family: "Helvetica Neue", sans-serif;
+  color: #333333;
 }
 
 a {
@@ -75,6 +76,11 @@ button:hover {
   cursor: pointer;
   text-decoration: none !important;
   color: #fff;
+}
+
+li {
+  list-style: none;
+  color: #333333;
 }
 
 .flex {
@@ -138,6 +144,7 @@ nav {
   background: #fafafa;
   height: 60px;
   width: 100%;
+  z-index: 999999;
 }
 nav ul {
   float: right;
@@ -151,6 +158,10 @@ nav li {
 nav li a {
   color: #333333;
   padding: 10px;
+}
+
+nav.bg-exception {
+  background-color: white;
 }
 
 label.logo {
@@ -213,6 +224,7 @@ label.logo img {
     text-align: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    z-index: 99999;
   }
   nav li {
     display: block;
@@ -522,15 +534,14 @@ footer {
   background-color: #263250;
   padding: 10px;
   margin-right: 24px;
-  width: 32px;
-  height: auto;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 .footer-wrapper .svg-icon:hover {
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
-  padding: 12px;
+  padding: 15px;
+  border-radius: 5px;
 }
 .footer-wrapper .svg-icon img {
   width: 24px;
@@ -691,4 +702,322 @@ footer {
   width: 10px;
   height: auto;
   margin: 6px 12px 0 0;
+}
+
+/*--------END OF WORK EXPERIENCE SECTION-----*/
+/*===========END OF ABOUT PAGE STYLING============*/
+/*=========CASE STUDY STYLING===========*/
+@media only screen and (max-width: 858px) {
+  .banner-section {
+    margin-top: 60px;
+  }
+}
+.case-study h1, .case-study h2, .case-study h3 {
+  color: #263250;
+}
+
+.banner-section img {
+  width: 100%;
+  height: auto;
+}
+
+.project-info {
+  margin-top: 48px;
+}
+
+.about-easy {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 0 24px;
+}
+.about-easy h2 {
+  margin-bottom: 12px;
+}
+
+/*---------PROJECT OBJECTIVE STYLING--------*/
+.project-objective {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 24px;
+  width: 100%;
+  margin-top: 114px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fadce0;
+}
+.project-objective .image-container {
+  width: 50%;
+}
+.project-objective .image-container img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+  top: -20%;
+}
+.project-objective .description-container {
+  width: 50%;
+  margin-top: 48px;
+}
+.project-objective .description-container h2 {
+  margin-bottom: 12px;
+}
+.project-objective .description-container p {
+  margin-bottom: 12px;
+  max-width: 400px;
+}
+.project-objective .description-container li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.project-objective .description-container li img {
+  width: 10px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+
+@media (max-width: 800px) {
+  .project-objective {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 96px;
+  }
+  .project-objective .image-container, .project-objective .description-container {
+    width: 100%;
+  }
+  .project-objective .image-container img {
+    width: 90%;
+  }
+}
+/*---------END OF PROJECT OBJECTIVE STYLING-------*/
+/*--------DESIGN PROCESS STYLING--------*/
+.design-process {
+  background-color: #fad3d8;
+  padding: 24px;
+  margin-bottom: 60px;
+}
+.design-process h2 {
+  position: relative;
+  top: 12px;
+}
+.design-process img {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+/*--------DESIGN PROCESS STYLING--------*/
+/*--------Competitive Analysis STYLING--------*/
+.competitive-analysis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  padding: 0 24px;
+}
+.competitive-analysis h2 {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.competitive-analysis .image-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.competitive-analysis .image-group img {
+  width: 100px;
+  height: auto;
+}
+.competitive-analysis .caption {
+  text-align: center;
+  font-style: italic;
+  margin: 12px 0 24px;
+}
+.competitive-analysis p {
+  margin-bottom: 12px;
+}
+
+/*--------END OF Competitive Analysis STYLING--------*/
+/*--------User Research STYLING--------*/
+.user-research {
+  background-color: #fadce0;
+  padding: 24px;
+}
+.user-research h2 {
+  margin: 24px 0;
+}
+.user-research p {
+  margin-bottom: 12px;
+  max-width: 950px;
+}
+.user-research li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 500px;
+}
+.user-research li img {
+  width: 10px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+
+/*--------End of User Research STYLING--------*/
+/*--------Empathy Map STYLING--------*/
+.empathy-map {
+  margin-top: 60px;
+  text-align: center;
+  padding: 24px 0;
+}
+.empathy-map h2 {
+  margin-bottom: 24px;
+}
+.empathy-map img {
+  width: 90%;
+  height: auto;
+}
+
+/*--------End of Empathy Map STYLING--------*/
+/*--------User Persona STYLING--------*/
+.user-persona {
+  background-color: #fadce0;
+  padding: 24px;
+}
+.user-persona h2 {
+  margin: 12px 0;
+}
+.user-persona p {
+  margin-bottom: 24px;
+}
+.user-persona img {
+  width: 65%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 900px) {
+  .user-persona img {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .user-persona img {
+    width: 100%;
+  }
+}
+/*--------End of User Persona STYLING--------*/
+/*--------The Solution STYLING--------*/
+.solution-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 12px 24px;
+  margin-top: 60px;
+  background-color: #fad3d8;
+}
+.solution-section .description-container {
+  width: 50%;
+}
+.solution-section .description-container h2 {
+  margin-bottom: 24px;
+}
+.solution-section li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 500px;
+}
+.solution-section li img {
+  width: 10px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+.solution-section .image-container {
+  width: 50%;
+}
+.solution-section .image-container img {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .solution-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 96px;
+  }
+  .solution-section .image-container, .solution-section .description-container {
+    width: 100%;
+  }
+  .solution-section .description-container {
+    margin-top: 48px;
+  }
+  .solution-section .image-container img {
+    width: 90%;
+  }
+}
+/*--------End of The Solution STYLING--------*/
+.user-flow {
+  text-align: center;
+  margin-top: 72px;
+}
+.user-flow h2 {
+  margin-bottom: 24px;
+}
+.user-flow img {
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: 500px) {
+  .user-flow img {
+    width: 100%;
+  }
 }
