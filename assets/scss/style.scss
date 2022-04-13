@@ -905,6 +905,8 @@ footer{
 }
 /*--------End of The Solution STYLING--------*/
 
+
+/*--------User Flow STYLING--------*/
 .user-flow{
     text-align: center;
     margin-top: 72px;
@@ -924,3 +926,157 @@ footer{
         }
     }
 }
+/*--------End of User Flow STYLING--------*/
+
+
+/*--------Sketch STYLING--------*/
+.sketch{
+    display: flex;
+    padding: 10px 24px;
+    width: 100%;
+    margin-top: 114px;
+    justify-content: space-between;
+    background-color: rgba(250, 220, 224, 1);
+    .image-container{
+        width: 50%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .description-container{
+        width: 50%;
+        margin-top: 48px;
+        margin-left: 24px;
+        align-self: center;
+        h2{
+            margin-bottom: 12px;
+        }
+        p{
+            margin-bottom: 12px;
+            max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .sketch{
+        flex-direction: column;
+        margin-top: 96px;
+        .image-container, .description-container{
+            width: 100%;
+        }
+        .description-container{
+            margin-left: unset;
+        }
+        
+    }
+}
+/*--------End of Sketch STYLING--------*/
+
+
+/*--------wireframe STYLING--------*/
+.lofi-wireframe{
+    margin-top: 96px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    header{
+        max-width: 600px;
+        text-align: center;
+
+    }
+    h2{
+        margin-bottom: 12px;
+    }
+    img{
+        width: 80%;
+        height: auto;
+        margin-top: 48px;
+    }
+}
+/*--------End of Wireframe STYLING--------*/
+
+
+/*--------Project Screens STYLING--------*/
+.project-screens{
+    background-color: rgba(250, 220, 224, 1);
+    padding-top: 24px;
+    .head-title{
+        margin-top: 48px;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+
+    .screens-layout{
+        display: flex;
+        width: 100%;
+        padding: 24px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 60px;
+        background-color: rgba(250, 211, 216, 1);
+        height: 400px;
+        .description-container{
+            width: 50%;
+            h2{
+                margin-bottom: 12px;
+            }
+            p{
+                max-width: 700px;
+            }
+        }
+        .image-container{
+            width: 50%;
+            img{
+                width: 70%;
+                height: auto;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+.other-screens{
+    margin-top: 60px;
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 800px){
+    .project-screens{
+        .screens-layout{
+            flex-direction: column;
+            margin-top: 96px;
+            height: auto;
+            .image-container, .description-container{
+                width: 100%;
+                justify-content: center;
+            }
+            .description-container{
+                margin-left: unset;
+            }
+            .image-container{
+                img{
+                    width: 90%;
+                    height: auto;
+                    margin-bottom: unset;
+                    margin-top: 24px;
+                }
+            }
+            
+        }
+    }
+    
+}
+
+/*--------End of Project Screens STYLING--------*/

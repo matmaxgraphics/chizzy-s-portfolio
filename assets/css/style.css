@@ -1004,6 +1004,7 @@ footer {
   }
 }
 /*--------End of The Solution STYLING--------*/
+/*--------User Flow STYLING--------*/
 .user-flow {
   text-align: center;
   margin-top: 72px;
@@ -1021,3 +1022,170 @@ footer {
     width: 100%;
   }
 }
+/*--------End of User Flow STYLING--------*/
+/*--------Sketch STYLING--------*/
+.sketch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 24px;
+  width: 100%;
+  margin-top: 114px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fadce0;
+}
+.sketch .image-container {
+  width: 50%;
+}
+.sketch .image-container img {
+  width: 100%;
+  height: auto;
+}
+.sketch .description-container {
+  width: 50%;
+  margin-top: 48px;
+  margin-left: 24px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.sketch .description-container h2 {
+  margin-bottom: 12px;
+}
+.sketch .description-container p {
+  margin-bottom: 12px;
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  .sketch {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 96px;
+  }
+  .sketch .image-container, .sketch .description-container {
+    width: 100%;
+  }
+  .sketch .description-container {
+    margin-left: unset;
+  }
+}
+/*--------End of Sketch STYLING--------*/
+/*--------wireframe STYLING--------*/
+.lofi-wireframe {
+  margin-top: 96px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.lofi-wireframe header {
+  max-width: 600px;
+  text-align: center;
+}
+.lofi-wireframe h2 {
+  margin-bottom: 12px;
+}
+.lofi-wireframe img {
+  width: 80%;
+  height: auto;
+  margin-top: 48px;
+}
+
+/*--------End of Wireframe STYLING--------*/
+/*--------Project Screens STYLING--------*/
+.project-screens {
+  background-color: #fadce0;
+  padding-top: 24px;
+}
+.project-screens .head-title {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+.project-screens .screens-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 60px;
+  background-color: #fad3d8;
+  height: 400px;
+}
+.project-screens .screens-layout .description-container {
+  width: 50%;
+}
+.project-screens .screens-layout .description-container h2 {
+  margin-bottom: 12px;
+}
+.project-screens .screens-layout .description-container p {
+  max-width: 700px;
+}
+.project-screens .screens-layout .image-container {
+  width: 50%;
+}
+.project-screens .screens-layout .image-container img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.other-screens {
+  margin-top: 60px;
+  padding: 24px;
+}
+.other-screens h2 {
+  margin-bottom: 24px;
+}
+.other-screens img {
+  width: 100%;
+  height: auto;
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  .project-screens .screens-layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 96px;
+    height: auto;
+  }
+  .project-screens .screens-layout .image-container, .project-screens .screens-layout .description-container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project-screens .screens-layout .description-container {
+    margin-left: unset;
+  }
+  .project-screens .screens-layout .image-container img {
+    width: 90%;
+    height: auto;
+    margin-bottom: unset;
+    margin-top: 24px;
+  }
+}
+/*--------End of Project Screens STYLING--------*/
