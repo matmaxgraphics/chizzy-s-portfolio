@@ -139,6 +139,55 @@ header.heading .experience {
   height: auto;
 }
 
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.flex-row .image-container {
+  width: 50%;
+}
+.flex-row .image-container img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.flex-row .description-container {
+  width: 50%;
+}
+.flex-row .description-container h4 {
+  margin-bottom: 12px;
+}
+.flex-row .description-container p {
+  margin-bottom: 12px;
+}
+.flex-row .description-container main {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 800px) {
+  .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-row .image-container, .flex-row .description-container {
+    width: 100%;
+  }
+  .flex-row .description-container {
+    margin-top: 48px;
+  }
+  .flex-row .image-container img {
+    width: 90%;
+  }
+}
 /*=======NAVIGATION BAR STYLING========*/
 nav {
   background: #fafafa;
@@ -390,7 +439,7 @@ label.logo img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fafafa;
-  padding: 12px;
+  padding: 24px;
 }
 .service-section .service-list span {
   width: 48px;
@@ -1189,3 +1238,159 @@ footer {
   }
 }
 /*--------End of Project Screens STYLING--------*/
+.conclusion {
+  background-color: #fadce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 24px;
+  margin: 96px 0;
+}
+.conclusion h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.conclusion p {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.conclusion p.bold {
+  font-weight: 600;
+  margin-top: 48px;
+}
+
+/*=========END OF EASY FLIP MOBILE APP CSS STYLIng=========*/
+/*=========VENTRI MOBILE APP CSS STYLING=========*/
+.ventri h4 {
+  color: #263250;
+}
+
+.ventri-banner {
+  padding: 0 24px;
+}
+
+.about-project {
+  padding: 24px;
+  margin: 60px 0;
+}
+.about-project h2 {
+  margin-bottom: 24px;
+}
+.about-project .image-container {
+  /*.empty-box{
+      background-color: rgba(164, 215, 231, 1);
+      width: 80%;
+      height: auto;
+      position: absolute;
+  }*/
+}
+.about-project .image-container img {
+  position: relative;
+  top: 20px;
+}
+
+@media (max-width: 800px) {
+  .about-project {
+    margin: 24px 0;
+  }
+}
+/*-----BUSINESS OPPORTUNITIES STYLING-----*/
+.bussiness-opportunity {
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+.bussiness-opportunity h2 {
+  margin-bottom: 24px;
+}
+
+/*-----END OF BUSINESS OPPORTUNITIES STYLING-----*/
+/*-----Target Audience STYLING-----*/
+.target-audience {
+  margin-top: 60px;
+  padding: 24px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+.target-audience h2 {
+  margin-bottom: 24px;
+}
+.target-audience .img-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.target-audience img {
+  width: 40%;
+  height: auto;
+  margin: 24px;
+}
+.target-audience .margin-top {
+  position: relative;
+  top: 24px;
+}
+
+@media (max-width: 544px) {
+  .target-audience .img-group {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .target-audience img {
+    width: 70%;
+  }
+  .target-audience .margin-top {
+    top: 0;
+  }
+}
+@media (max-width: 400px) {
+  .target-audience img {
+    width: 90%;
+  }
+}
+/*-----END OF Target Audience STYLING-----*/
+/*-----DESIGN PROCESS STYLING-----*/
+.artifact {
+  text-align: center;
+  margin-top: 60px;
+}
+.artifact .design-process {
+  padding: 24px;
+  background-color: #a4d7e7;
+}
+.artifact h2 {
+  margin-bottom: 24px;
+}
+.artifact img {
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .artifact .design-process {
+    padding: 12px;
+  }
+  .artifact img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*-----END OF DESIGN PROCESS STYLING-----*/
+.key-findings {
+  background-color: unset !important;
+}
