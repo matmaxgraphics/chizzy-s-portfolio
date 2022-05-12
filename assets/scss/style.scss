@@ -1144,6 +1144,15 @@ footer{
         margin-top: 48px;
     }
 }
+
+.style-guide{
+    margin: 60px 0;
+    padding: 24px;
+    img{
+        width: 80%;
+        height: auto;
+    }
+}
 /*=========END OF EASY FLIP MOBILE APP CSS STYLIng=========*/
 
 
@@ -1276,4 +1285,357 @@ footer{
 
 .key-findings{
     background-color: unset !important;
+}
+
+/*-----USER CHALLENGES SECTION STYLING----*/
+.challenges{
+    background-color: rgba(164, 215, 231, 1);
+    padding: 24px;
+    margin: 60px 0;
+    h2{
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 12px;
+    }
+    li{
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        max-width: 500px;
+        img{
+            width: 10px;
+            height: auto;
+            margin: 6px 12px 0 0;
+        }
+    }
+}
+/*-----END OF USER CHALLENGES SECTION STYLING----*/
+
+
+/*-----END OF PROPOSED SOLUTION SECTION STYLING----*/
+.proposed-solution{
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+    }
+    main{
+        h4{
+            margin-bottom: 12px;
+            display: flex;
+            max-width: 500px;
+            align-items: center;
+            img{
+                width: 10px;
+                height: auto;
+                margin: 6px 12px 0 0;
+            }
+        }
+        div{
+            max-width: 500px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .proposed-solution{
+        .flex-row{
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+/*-----PROPOSED SOLUTION SECTION STYLING----*/
+
+/*-------EMPATHY MAP SECTION-----*/
+.empathy-map__ventri{
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .empathy-map__ventri{
+        .img-group{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*-------END OF EMPATHY MAP SECTION-----*/
+
+
+/*-------USER PERSONA SECTION STYLING-----*/
+.user-persona__ventri{
+    margin: 60px 0;
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .img-group{
+        max-width: 800px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+/*-------END OF USER PERSONA SECTION STYLING-----*/
+
+
+.user-flow__ventri{
+    padding: 24px;
+    background-color: rgba(164, 215, 231, 1);
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .flow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: auto;
+        object-position: center;
+        object-fit: cover;
+    }
+    .user-buyer{
+        width: 70%;
+        height: auto;
+    }
+    .user-merchant{
+        width: 10%;
+        height: auto;
+    }
+}
+
+/*------SKETCH SECTION STYLING------*/
+.sketch__ventri{
+    margin: 60px 0;
+    padding: 24px;
+    h2, p{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 24px;
+        max-width: 600px;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-top: 24px;
+        width: 90%;
+        margin: auto;
+        img{
+            width: calc(100% / 4);
+            height: auto;
+        }
+    }
+    img.top-spacing{
+        position: relative;
+        top: 36px;
+    }
+}
+
+@media (max-width: 600px){
+    .sketch__ventri{
+        .img-group{
+            flex-direction: column;
+            width: 100%;
+            img{
+                width: 80%;
+                height: auto;
+                margin: auto;
+            }
+        }
+        img.top-spacing{
+            top: 0;
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .sketch__ventri{
+        .img-group{
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*----LO-FI WIREFRAME SECTION STYLING----*/
+.wireframe__ventri{
+    margin: 60px 0;
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .wireframe__ventri{
+        .img-group{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*----END OF LO-FI WIREFRAME SECTION STYLING----*/
+
+/*----HI-FI WIREFRAME SECTION STYLING----*/
+.high-fidelity{
+    margin: 60px 0;
+    .head-title{
+        margin: 48px 0;
+        text-align: center;
+    }
+
+    .screens-layout{
+        display: flex;
+        width: 100%;
+        background-color: rgba(164, 215, 231, 1);
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        height: auto;
+        padding: 24px;
+        .description-container{
+            width: 50%;
+            h4{
+                margin-bottom: 12px;
+            }
+            p{
+                max-width: 600px;
+            }
+        }
+        .image-container{
+            width: 50%;
+            img{
+                width: 70%;
+                height: auto;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .high-fidelity{
+        .screens-layout{
+            flex-direction: column;
+            height: auto;
+            .image-container, .description-container{
+                width: 100%;
+                justify-content: center;
+            }
+            .description-container{
+                margin-left: unset;
+            }
+            .image-container{
+                img{
+                    width: 90%;
+                    height: auto;
+                    margin-bottom: unset;
+                    margin-top: 24px;
+                }
+            }
+            
+        }
+
+        #column-reverse{
+            flex-direction: column-reverse;
+            .description-container{
+                margin-top: 24px;
+            }
+        }
+    }
+    
+}
+/*----END OF HI-FI WIREFRAME SECTION STYLING----*/
+
+/*----STYLE GUIDE SECTION STYLING----*/
+.style-guide__ventri{
+    margin: 60px 0;
+    padding: 24px;
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .style-guide__ventri{
+        .img-group{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*----END OF STYLE GUIDE SECTION STYLING----*/
+.exception-styling{
+    margin-right: 48px;
+}
+@media (max-width: 800px){
+    .exception-styling{
+        margin-right: unset;
+    }
+}
+
+.appreciation{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 60px 0;
 }
