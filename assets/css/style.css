@@ -1810,3 +1810,526 @@ footer {
   text-transform: capitalize;
   margin: 60px 0;
 }
+
+/*=========END OF VENTRI MOBILE APP CSS STYLING=========*/
+/*=========GREEN POULT WEBSITE CSS STYLING=========*/
+.banner__poult {
+  background-color: #93e2ab;
+  width: 100%;
+  height: auto;
+  padding: 24px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.banner__poult img {
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .banner__poult {
+    margin-top: 60px;
+  }
+  .banner__poult img {
+    width: 90%;
+  }
+}
+/*------ABOUT SECTION STYLING-----*/
+.about-project__poult {
+  padding: 24px;
+}
+.about-project__poult .image-container img {
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .about-project__poult .image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*------END OF ABOUT SECTION STYLING-----*/
+/*------DESIGN PROCESS SECTION STYLING-----*/
+.design-process__poult {
+  padding: 24px;
+  margin: 60px 0;
+}
+.design-process__poult h2 {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.design-process__poult main {
+  max-width: 900px;
+  margin: auto;
+}
+.design-process__poult .process-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 24px;
+}
+.design-process__poult .process-item__list {
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 350px;
+  height: 400px;
+}
+.design-process__poult .process-item__list .process-img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 12px;
+}
+.design-process__poult .process-item__list h4, .design-process__poult .process-item__list p {
+  margin-bottom: 12px;
+}
+.design-process__poult .process-item__list li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 500px;
+}
+.design-process__poult .process-item__list li img {
+  width: 24px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+.design-process__poult .blue-bg {
+  background-color: #c7e7f1;
+}
+.design-process__poult .pink-bg {
+  background-color: #fadce0;
+}
+.design-process__poult .cyan-bg {
+  background-color: #c0f1d4;
+}
+.design-process__poult .magenta-bg {
+  background-color: #eccdef;
+}
+
+/*------DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
+.design-strategy {
+  padding: 24px;
+}
+.design-strategy h2, .design-strategy p {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.design-strategy main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 900px;
+  margin: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.design-strategy .strategy-list {
+  max-width: 300px;
+  padding: 12px;
+}
+.design-strategy .strategy-list h4 {
+  margin-bottom: 24px;
+}
+.design-strategy .strategy-list li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 500px;
+}
+.design-strategy .strategy-list li img {
+  width: 24px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+
+@media (max-width: 600px) {
+  .design-strategy main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design-strategy .strategy-list {
+    margin-top: 24px;
+  }
+}
+/*------END OF DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
+/*------USER RESEARCH GREEN POULT SECTION STYLING-----*/
+.user-research__poult {
+  padding: 24px;
+  background-color: #92e3a9;
+}
+.user-research__poult .flex-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.user-research__poult .description-container h2 {
+  margin-bottom: 24px;
+}
+.user-research__poult .description-container p {
+  max-width: 500px;
+}
+.user-research__poult .image-container img {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .user-research__poult .image-container img {
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+  }
+}
+/*------END OF USER RESEARCH GREEN POULT SECTION STYLING-----*/
+/*-----USER INTERVIEW SECTION STYLING-----*/
+.user-interview {
+  padding: 24px;
+  margin: 60px 0;
+}
+.user-interview .flex-row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.user-interview .description-container {
+  margin-right: 24px;
+}
+.user-interview .image-container img {
+  width: 70%;
+  height: auto;
+  margin-left: 24px;
+}
+
+@media (max-width: 800px) {
+  .user-interview {
+    margin: 24px 0 0 0;
+  }
+  .user-interview .description-container {
+    margin-right: unset;
+  }
+  .user-interview .image-container img {
+    width: 80%;
+    margin: 24px 0;
+  }
+}
+/*-----END OF USER INTERVIEW SECTION STYLING-----*/
+/*-----OBSERVATION SECTION STYLING-----*/
+.Observation-section {
+  padding: 24px;
+}
+.Observation-section .description-container h2 {
+  margin-bottom: 24px;
+}
+.Observation-section .description-container p {
+  margin-bottom: 24px;
+}
+.Observation-section .description-container li {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 500px;
+}
+.Observation-section .description-container li img {
+  width: 24px;
+  height: auto;
+  margin: 6px 12px 0 0;
+}
+
+@media (max-width: 800px) {
+  .Observation-section .flex-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*-----END OF OBSERVATION SECTION STYLING-----*/
+/*-----EMPATHY MAPPING SECTION STYLING-----*/
+.empathy-mapping {
+  padding: 24px;
+  margin: 48px 0;
+}
+.empathy-mapping h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.empathy-mapping .img-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.empathy-mapping .img-group img {
+  width: 40%;
+  height: auto;
+  background-color: #f8fef9;
+  padding: 12px;
+}
+
+@media (max-width: 600px) {
+  .empathy-mapping .img-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .empathy-mapping .img-group img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*-----END OF EMPATHY MAPPING SECTION STYLING-----*/
+/*-----USER PERSONA SECTION STYLING-----*/
+.user-persona__poult {
+  padding: 24px;
+  margin: 48px 0;
+}
+.user-persona__poult h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.user-persona__poult .img-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+.user-persona__poult .img-group img {
+  width: 40%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .user-persona__poult .img-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-persona__poult .img-group img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*-----END OF USER PERSONA SECTION STYLING-----*/
+/*-----SOLUTION SECTION POULT STYLING-----*/
+.solution-section__poult {
+  padding: 24px;
+  background-color: #92e3a9;
+}
+.solution-section__poult h2 {
+  margin-bottom: 24px;
+}
+.solution-section__poult .description-container h4 {
+  margin-bottom: 12px;
+}
+.solution-section__poult .description-container main {
+  max-width: 500px;
+}
+
+/*-----END OF SOLUTION SECTION POULT STYLING-----*/
+/*-----WIRERAME SECTIONS STYLING-----*/
+.high-fidelity .screens-layout {
+  background-color: unset;
+}
+
+.lo-fi__wireframe {
+  padding: 24px;
+  margin: 48px 0;
+}
+.lo-fi__wireframe h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.lo-fi__wireframe .img-group {
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 24px;
+}
+.lo-fi__wireframe .img-group img {
+  width: calc(100% / 3);
+  height: auto;
+}
+.lo-fi__wireframe .img-group img:nth-child(2) {
+  position: relative;
+  top: 24px;
+}
+.lo-fi__wireframe .img-group img:nth-child(3) {
+  position: relative;
+  top: 48px;
+}
+
+@media (max-width: 700px) {
+  .lo-fi__wireframe .img-group {
+    padding: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .lo-fi__wireframe .img-group img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .lo-fi__wireframe .img-group img:nth-child(2) {
+    position: relative;
+    top: 0;
+  }
+  .lo-fi__wireframe .img-group img:nth-child(3) {
+    position: relative;
+    top: 0;
+  }
+}
+.high-fidelity__poult {
+  padding: 24px;
+  background: #92e3a9;
+}
+.high-fidelity__poult h2 {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.high-fidelity__poult img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .high-fidelity__poult img {
+    width: 100%;
+  }
+}
+/*-----END OF WIRERAME SECTIONS STYLING-----*/
+/*-----STYLE GUIDE SECTION STYLING-----*/
+.style-guide__poult {
+  margin: 60px 0;
+  padding: 24px;
+}
+.style-guide__poult h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.style-guide__poult img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  height: auto;
+  margin: auto;
+}
+
+@media (max-width: 700px) {
+  .style-guide__poult img {
+    width: 100%;
+  }
+}
+/*-----END OF STYLE GUIDE SECTION STYLING-----*/
+.conclusion__poult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.conclusion__poult h2 {
+  margin-bottom: 24px;
+}
+.conclusion__poult p {
+  margin-bottom: 36px;
+}

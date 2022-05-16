@@ -1639,3 +1639,490 @@ footer{
     text-transform: capitalize;
     margin: 60px 0;
 }
+/*=========END OF VENTRI MOBILE APP CSS STYLING=========*/
+
+
+
+/*=========GREEN POULT WEBSITE CSS STYLING=========*/
+.banner__poult{
+    background-color: rgba(147, 226, 171, 1);
+    width: 100%;
+    height: auto;
+    padding: 24px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px){
+    .banner__poult{
+        margin-top: 60px;
+        img{
+            width: 90%;
+        }
+    }
+}
+
+/*------ABOUT SECTION STYLING-----*/
+.about-project__poult{
+    padding: 24px;
+    .image-container{
+        img{
+            width: 80%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .about-project__poult{
+        .image-container{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*------END OF ABOUT SECTION STYLING-----*/
+
+
+/*------DESIGN PROCESS SECTION STYLING-----*/
+.design-process__poult{
+    padding: 24px;
+    margin: 60px 0;
+    h2{
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    main{
+        max-width: 900px;
+        margin: auto;
+    }
+    .process-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 24px;
+    }
+    .process-item__list{
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 350px;
+        height: 400px;
+        .process-img{
+            width: 40px;
+            height: auto;
+            margin-bottom: 12px;
+        }
+        h4, p{
+            margin-bottom: 12px;
+        }
+        li{
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 500px;
+            img{
+                width: 24px;
+                height: auto;
+                margin: 6px 12px 0 0;
+            }
+        }
+
+    }
+    .blue-bg{
+        background-color: rgba(199, 231, 241, 1);
+    }
+    .pink-bg{
+        background-color: rgba(250, 220, 224, 1);
+    }
+    .cyan-bg{
+        background-color: rgba(192, 241, 212, 1);
+    }
+    .magenta-bg{
+        background-color: rgba(236, 205, 239, 1);
+    }
+}
+
+
+/*------DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
+.design-strategy{
+    padding: 24px;
+    h2, p{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 900px;
+        margin: auto;
+        flex-flow: row wrap;
+    }
+    .strategy-list{
+        max-width: 300px;
+        padding: 12px;
+        h4{
+            margin-bottom: 24px;
+        }
+        li{
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 500px;
+            img{
+                width: 24px;
+                height: auto;
+                margin: 6px 12px 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .design-strategy{
+        main{
+            flex-direction: column;
+        }
+        .strategy-list{
+            margin-top: 24px;
+        }
+    }
+}
+/*------END OF DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
+
+
+/*------USER RESEARCH GREEN POULT SECTION STYLING-----*/
+.user-research__poult{
+    padding: 24px;
+    background-color: rgba(146, 227, 169, 1);
+    .flex-row{
+        align-items: center;
+    }
+    .description-container{
+        h2{
+            margin-bottom: 24px;
+        }
+        p{
+            max-width: 500px;
+        }
+    }
+    .image-container{
+        img{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .user-research__poult{
+        .image-container{
+            img{
+                width: 80%;
+                margin: auto;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+/*------END OF USER RESEARCH GREEN POULT SECTION STYLING-----*/
+
+
+/*-----USER INTERVIEW SECTION STYLING-----*/
+.user-interview{
+    padding: 24px;
+    margin: 60px 0;
+    .flex-row{
+        justify-content: space-between;
+    }
+    .description-container{
+        margin-right: 24px;
+    }
+    .image-container{
+        img{
+            width: 70%;
+            height: auto;
+            margin-left: 24px;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .user-interview{
+        margin: 24px 0 0 0;
+        .description-container{
+            margin-right: unset;
+        }
+        .image-container{
+            img{
+                width: 80%;
+                margin: 24px 0;
+            }
+        }
+    } 
+}
+/*-----END OF USER INTERVIEW SECTION STYLING-----*/
+
+
+/*-----OBSERVATION SECTION STYLING-----*/
+.Observation-section{
+    padding: 24px;
+    .description-container{
+        h2{
+            margin-bottom: 24px;
+        }
+        p{
+            margin-bottom: 24px;
+        }
+        li{
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 500px;
+            img{
+                width: 24px;
+                height: auto;
+                margin: 6px 12px 0 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .Observation-section{
+        .flex-row{
+            flex-direction: column-reverse;
+        }
+    }
+}
+/*-----END OF OBSERVATION SECTION STYLING-----*/
+
+
+/*-----EMPATHY MAPPING SECTION STYLING-----*/
+.empathy-mapping{
+    padding: 24px;
+    margin: 48px 0;
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 40%;
+            height: auto;
+            background-color: rgba(248, 254, 249, 1);
+            padding: 12px;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .empathy-mapping{
+        .img-group{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*-----END OF EMPATHY MAPPING SECTION STYLING-----*/
+
+
+
+/*-----USER PERSONA SECTION STYLING-----*/
+.user-persona__poult{
+    padding: 24px;
+    margin: 48px 0;
+    h2{
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .img-group{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-flow: row wrap;
+        img{
+            width: 40%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .user-persona__poult{
+        .img-group{
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+/*-----END OF USER PERSONA SECTION STYLING-----*/
+
+
+/*-----SOLUTION SECTION POULT STYLING-----*/
+.solution-section__poult{
+    padding: 24px;
+    background-color: rgba(146, 227, 169, 1);
+    h2{
+        margin-bottom: 24px;
+    }
+    .description-container{
+        h4{
+            margin-bottom: 12px;
+        }
+        main{
+            max-width: 500px;
+        }
+    }
+}
+/*-----END OF SOLUTION SECTION POULT STYLING-----*/
+
+
+/*-----WIRERAME SECTIONS STYLING-----*/
+.high-fidelity{
+    .screens-layout{
+        background-color: unset;
+    }
+}
+
+.lo-fi__wireframe{
+    padding: 24px;
+    margin: 48px 0;
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .img-group{
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        img{
+            width: calc(100% / 3);
+            height: auto;
+        }
+        img:nth-child(2){
+            position: relative;
+            top: 24px;
+        }
+        img:nth-child(3){
+            position: relative;
+            top: 48px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .lo-fi__wireframe{
+        .img-group{
+            padding: 0px;
+            flex-flow: row wrap;
+            img{
+                width: 80%;
+                height: auto;
+                margin-bottom: 24px;
+            }
+            img:nth-child(2){
+                position: relative;
+                top: 0;
+            }
+            img:nth-child(3){
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}
+
+.high-fidelity__poult{
+    padding: 24px;
+    background: rgba(146, 227, 169, 1);
+    h2{
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    img{
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px){
+    .high-fidelity__poult{
+        img{
+            width: 100%;
+        }
+    }
+}
+/*-----END OF WIRERAME SECTIONS STYLING-----*/
+
+
+
+/*-----STYLE GUIDE SECTION STYLING-----*/
+.style-guide__poult{
+    margin: 60px 0;
+    padding: 24px;
+    h2{
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    img{
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px){
+    .style-guide__poult{
+        img{
+            width: 100%;
+        }
+    }
+}
+/*-----END OF STYLE GUIDE SECTION STYLING-----*/
+
+
+.conclusion__poult{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    h2{
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 36px;
+    }
+}
