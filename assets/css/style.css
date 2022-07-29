@@ -104,36 +104,99 @@ li {
 }
 
 header.heading {
-  position: relative;
+  max-width: 250px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 48px;
+}
+header.heading h2 {
+  margin-bottom: 12px;
 }
 header.heading .heading-underline {
-  position: absolute;
   width: 100px;
   height: 3px;
   bottom: -8px;
   background-color: #000;
 }
-header.heading .brand {
-  left: 29.5%;
-}
-header.heading .service {
-  left: 41%;
-}
-header.heading .experience {
-  left: 0%;
+
+header.heading-exception {
+  max-width: 600px;
 }
 
-@media (max-width: 500px) {
-  header.heading .brand {
-    left: 8%;
+@media (max-width: 1028px) {
+  header.heading {
+    max-width: 200px;
   }
-  header.heading .service {
-    left: 35%;
-  }
-  header.heading .experience {
-    left: 0%;
+
+  header.heading-exception {
+    max-width: 600px;
   }
 }
+/*header.heading{
+    position: relative;
+    .heading-underline{
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        bottom: -8px;
+        background-color: #000;
+    }
+    .brand{
+        left: 29.5%;
+    }
+    .service{
+        left: 41%;
+    }
+    .experience{
+        left: 0%;
+    }
+}
+
+@media (max-width: 800px){
+    header.heading{
+        position: relative;
+        .heading-underline{
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            bottom: -8px;
+            background-color: #000;
+        }
+        .brand{
+            left: 29.5%;
+        }
+        .service{
+            left: 41%;
+        }
+        .experience{
+            left: 0%;
+        }
+    }
+}
+
+
+@media (max-width: 500px){
+    header.heading{
+        .brand{
+            left: 8%;
+        }
+        .service{
+            left: 35%;
+        }
+        .experience{
+            left: 0%;
+        }
+    }
+}*/
 .waving {
   width: 32px;
   height: auto;
@@ -1942,6 +2005,12 @@ footer {
   background-color: #eccdef;
 }
 
+@media (max-width: 800px) {
+  .design-process__poult {
+    padding: 24px;
+    margin: 0 0 60px;
+  }
+}
 /*------DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
 .design-strategy {
   padding: 24px;

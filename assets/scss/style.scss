@@ -80,7 +80,38 @@ li{
 .margin-top{
     margin-top: 24px;
 }
+
+
 header.heading{
+    max-width: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 48px;
+    h2{
+        margin-bottom: 12px;
+    }
+    .heading-underline{
+        width: 100px;
+        height: 3px;
+        bottom: -8px;
+        background-color: #000;
+    }
+}
+header.heading-exception{
+    max-width: 600px;
+}
+
+@media (max-width: 1028px){
+    header.heading{
+        max-width: 200px;
+    }
+    header.heading-exception{
+        max-width: 600px;
+    }
+}
+/*header.heading{
     position: relative;
     .heading-underline{
         position: absolute;
@@ -100,6 +131,29 @@ header.heading{
     }
 }
 
+@media (max-width: 800px){
+    header.heading{
+        position: relative;
+        .heading-underline{
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            bottom: -8px;
+            background-color: #000;
+        }
+        .brand{
+            left: 29.5%;
+        }
+        .service{
+            left: 41%;
+        }
+        .experience{
+            left: 0%;
+        }
+    }
+}
+
+
 @media (max-width: 500px){
     header.heading{
         .brand{
@@ -112,7 +166,7 @@ header.heading{
             left: 0%;
         }
     }
-}
+}*/
 
 .waving{
     width: 32px;
@@ -1755,6 +1809,12 @@ footer{
     }
 }
 
+@media (max-width: 800px){
+    .design-process__poult{
+        padding: 24px;
+        margin: 0 0 60px;
+    }
+}
 
 /*------DESIGN STRAGEGY__GREENpOULT SECTION STYLING-----*/
 .design-strategy{
