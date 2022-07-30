@@ -107,8 +107,17 @@ header.heading-exception{
     header.heading{
         max-width: 200px;
     }
+}
+@media (max-width: 800px){
     header.heading-exception{
-        max-width: 600px;
+        max-width: 400px;
+    }
+}
+@media (max-width: 400px){
+    header.heading-exception{
+        .heading-underline{
+            display: none;
+        }
     }
 }
 /*header.heading{
